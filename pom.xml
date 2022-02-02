@@ -104,5 +104,17 @@
             </plugin>
         </plugins>
     </build>
+    <distributionManagement>
+        <repository>
+            <id>central</id>
+            <name>aolshared3a-releases</name>
+            <url>https://cisioninsights.jfrog.io/cisioninsights/libs-release-local</url>
+        </repository>
+        <snapshotRepository>
+            <id>snapshots</id>
+            <name>aolshared3a-snapshots</name>
+            <url>https://cisioninsights.jfrog.io/cisioninsights/libs-snapshot-local</url>
+        </snapshotRepository>
+    </distributionManagement>
 
 </project>
