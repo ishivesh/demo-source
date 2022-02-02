@@ -22,7 +22,7 @@ public class DemoSourceApplication {
     @Bean
     public Supplier<Flux<String>> emit() {
         return () ->
-            Flux.interval(Duration.ofSeconds(1))
+            Flux.interval(Duration.ofMillis(1))
                 .onBackpressureLatest()
                 .map(aLong -> aLong + " - demo")
                 .log();
